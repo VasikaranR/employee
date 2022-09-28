@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-info">
+    <a class="navbar-brand" href="#">Employee Management </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active nav-item m-4">
+          <a class="nav-link" [routerLink]="['/sample']" href="#">projects<span class="sr-only"></span></a>
+        </li>
+        <li *ngIf="name" class="nav-item nav-item m-4">
+          <a  class="nav-link" [routerLink]="[]" href="#">{{name}}</a>
+        </li>
+        <li *ngIf="!name" class="nav-item nav-item m-4">
+          <a  class="nav-link" [routerLink]="['/sample1']" href="#">login</a>
+        </li>
+        <li class="logout" class *ngIf="name" class="nav-item nav-item m-4 p-10">
+          <a  class="nav-link"  href="#" (click)="logout()">logout</a>
+        </li>
+        <li class="nav-item dropdown">
+        </ul>
+      </div>
+  </nav>

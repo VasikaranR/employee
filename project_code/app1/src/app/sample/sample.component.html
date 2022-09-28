@@ -1,0 +1,24 @@
+
+<table  class="table table-border border border-dark container p-4 m-4 ">
+    <thead class=" bg-secondary">
+        <tr>
+          <th scope="col">Project Id</th>
+          <th scope="col">Project  Name</th>
+          <th scope="col">Domain</th>
+          <th scope="col">Budget</th>
+          <th scope="col">Assigned</th>
+        </tr>
+    </thead>
+    <tbody class="p-10 m-5 " *ngFor="let user of userList;index as i">
+        <td>{{user.project_id}}</td>
+        <td>{{user.project_name}}</td>
+        <td>{{user.domain}}</td>
+        <td>{{user.budget}}</td>
+        <td>{{user.assigned}}</td>
+    </tbody>
+    
+</table>
+
+
+
+

@@ -1,0 +1,22 @@
+{
+  "userDetails": [
+    { "userName":"Vasikaran",
+      "userEmail": "vasichan2000@gmail.com",
+      "password": "Vasikaran",
+      "role": "admin"
+    },
+    {
+      "userName":"KavyaMohan",
+      "userEmail":"kavyamohan@gmail.com",
+      "password":"Kavyamohan",
+      "role":"user"
+
+    },
+    {
+      "userName":"Kabalikhan",
+      "userEmail":"kabalikhan@gmail.com",
+      "password":"Kabalikhan",
+      "role":"user"
+    }
+  ]
+}
