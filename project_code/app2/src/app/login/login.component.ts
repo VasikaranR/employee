@@ -69,7 +69,7 @@ login(){
        localStorage.setItem("email",emailVal)
        localStorage.setItem("role",this.roleList)
        localStorage.setItem("name",this.userNameList)
-       this.router.navigate(['sample']).then(()=>{
+       this.router.navigate(['user']).then(()=>{
          window.location.reload();
        })
       }

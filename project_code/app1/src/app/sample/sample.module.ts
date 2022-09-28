@@ -4,13 +4,12 @@ import { HttpClientModule } from '@angular/common/http'
 
 
 import { SampleRoutingModule } from './sample-routing.module';
-import { SampleComponent } from './sample.component';
-
+import { SampleComponent } from './sample.component'
 
 
 @NgModule({
   declarations: [
-    SampleComponent
+     SampleComponent
   ],
   imports: [
     CommonModule,

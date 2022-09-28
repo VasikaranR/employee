@@ -1,8 +1,12 @@
+<div class="container w-100 p-5">
+  <p></p>
+  <p></p>
+</div>
+<div class="container boder bg-secondary text-white w-50 p-5">
 
-<div class="container">
 	<form [formGroup]="loginForm"  novalidate>
 		<div class="form-group">
-			<label for="exampleInputEmail1">Email address</label>
+			<label for="exampleInputEmail1">Email address</label>   
       <input type="email" class="form-control" formControlName="email" placeholder="Enter email">
       <small class="form-text text-muted" 
         *ngIf="loginForm.controls.email.touched && loginForm.controls.email.errors?.required">
@@ -14,15 +18,21 @@
         Email address not well formed.!
       </small>
     </div>
-    
+    <br>
     <div class="form-group">
       <label for="exampleInputPassword1">Password</label>
       <input type="password" class="form-control" formControlName="password" placeholder="Password">
+ 
       <small class="form-text text-muted" 
       *ngIf="loginForm.controls.password.touched && loginForm.controls.password.errors?.required">
         Please enter valid password !
     </small>
     </div>
+    <br>
     <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid" (click)="login()" >Login</button>
   </form>
+</div>
+<div class="container w-100 p-5">
+  <p></p>
+  <p></p>
 </div>

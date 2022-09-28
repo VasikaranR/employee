@@ -1,17 +1,16 @@
+
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 
-
 @Component({
-  selector: 'app-sample',
-  templateUrl: './sample.component.html',
-  styleUrls: ['./sample.component.scss']
+  selector: 'app-user',
+  templateUrl: './user.component.html',
+  styleUrls: ['./user.component.scss']
 })
+export class UserComponent implements OnInit {
 
-
-
-export class SampleComponent implements OnInit {
   
+
   userList:any=[]
   adminList:any=[]
   
@@ -44,4 +43,5 @@ export class SampleComponent implements OnInit {
    
 
 }
+
 }

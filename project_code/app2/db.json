@@ -3,20 +3,34 @@
     { "userName":"Vasikaran",
       "userEmail": "vasichan2000@gmail.com",
       "password": "Vasikaran",
-      "role": "admin"
+      "employeeRole":"Software analyst",
+      "role": "admin",
+      "joined":"2022",
+      "projects":"6",
+      "ratings":"9.2"
+
     },
     {
       "userName":"KavyaMohan",
       "userEmail":"kavyamohan@gmail.com",
       "password":"Kavyamohan",
-      "role":"user"
-
+      "employeeRole":"Data analyst",
+      "role":"user",
+      "joined":"2018",
+      "projects":"3",
+      "ratings":"9.7"
     },
     {
       "userName":"Kabalikhan",
       "userEmail":"kabalikhan@gmail.com",
       "password":"Kabalikhan",
-      "role":"user"
+      "employeeRole":"Data Scientist",
+
+      "role":"user",
+      "joined":"2014",
+      "projects":"9",
+      "ratings":"9.0"
+
     }
   ]
 }

@@ -37,7 +37,7 @@ module.exports = {
         name: "app2",
         filename: "remoteEntry.js",
         exposes: {
-         './Module': './projects/app2/src/app/sample1/sample1.module.ts',
+         './Module': './project_code/app2/src/app/sample1/sample1.module.ts',
              } ,       
         
         // For hosts (please adjust)

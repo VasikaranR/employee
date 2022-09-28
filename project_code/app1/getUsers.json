@@ -5,14 +5,14 @@
       "project_name": "SMART HOUSE",
       "domain": "IOT",
       "budget": 3000000,
-      "assigned":"user1"
+      "assigned":"Vasikaran"
     },
     {
       "project_id": 2,
       "project_name": "TECLATON",
       "domain": "AI and ML",
       "budget": 47400000,
-      "assigned":"user2"
+      "assigned":"Vasikaran"
 
     },
     {
@@ -20,7 +20,7 @@
       "project_name": "LATON",
       "domain": "TESTING",
       "budget": 34500000,
-      "assigned":"user1"
+      "assigned":"KavyaMohan"
 
     },
     {
@@ -28,7 +28,7 @@
       "project_name": "STOCIC",
       "domain": "WEB DEVELOPMENT",
       "budget": 468000000,
-      "assigned":"user2"
+      "assigned":"Kabalikhan"
 
     },
     {
@@ -36,7 +36,7 @@
       "project_name": "MIRANDA",
       "domain": "CLOUD INTERGRATION",
       "budget": 26789000,
-      "assigned":"user1"
+      "assigned":"KavyaMohan"
 
     },
     {
@@ -44,7 +44,7 @@
       "project_name": "MITCHUBISHI",
       "domain": "IOT",
       "budget": 89000000,
-      "assigned":"user2"
+      "assigned":"Kabalikhan"
 
     },
     {
@@ -52,7 +52,7 @@
       "project_name": "MEGATRON",
       "domain": "MIGRATION",
       "budget": 57680000,
-      "assigned":"user1"
+      "assigned":"Vasikaran"
 
     },
     {
@@ -60,7 +60,7 @@
       "project_name": "MAJESTIC",
       "domain": "DATA SCIENCE",
       "budget": 1245300000,
-      "assigned":"user2"
+      "assigned":"Kabalikhan"
 
     },
     {
@@ -68,7 +68,7 @@
       "project_name": "BEARSTONE",
       "domain": "ML",
       "budget": 34526700000,
-      "assigned":"user1"
+      "assigned":"Kabalikhan"
 
     }
     

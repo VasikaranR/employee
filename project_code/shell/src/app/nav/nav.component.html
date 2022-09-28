@@ -6,11 +6,18 @@
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
+        <div *ngIf="role=='user'">
         <li class="nav-item active nav-item m-4">
-          <a class="nav-link" [routerLink]="['/sample']" href="#">projects<span class="sr-only"></span></a>
+          <a class="nav-link" [routerLink]="['/sample']" href="#"> My Projects<span class="sr-only"></span></a>
         </li>
+      </div>
+      <div *ngIf="role=='admin'">
+        <li class="nav-item active nav-item m-4">
+          <a class="nav-link" [routerLink]="['/user']" href="#"> All Projects<span class="sr-only"></span></a>
+        </li>
+      </div>
         <li *ngIf="name" class="nav-item nav-item m-4">
-          <a  class="nav-link" [routerLink]="[]" href="#">{{name}}</a>
+          <a  class="nav-link" [routerLink]="['profile']" href="#">{{name}}</a>
         </li>
         <li *ngIf="!name" class="nav-item nav-item m-4">
           <a  class="nav-link" [routerLink]="['/sample1']" href="#">login</a>

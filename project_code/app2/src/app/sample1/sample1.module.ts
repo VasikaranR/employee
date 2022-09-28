@@ -7,13 +7,15 @@ import { HttpBackend, HttpClientModule } from '@angular/common/http';
 import { Sample1RoutingModule } from './sample1-routing.module';
 import { Sample1Component } from './sample1.component';
 import { LoginComponent } from '../login/login.component';
+import { ProfileComponent } from '../profile/profile.component';
 
 
 
 @NgModule({
   declarations: [
     Sample1Component,
-    LoginComponent
+    LoginComponent,
+    ProfileComponent
   ],
   imports: [
     CommonModule,
