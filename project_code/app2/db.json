@@ -31,6 +31,19 @@
       "projects":"9",
       "ratings":"9.0"
 
+    },
+    {
+      "userName":"Vinoth",
+      "userEmail":"vinoth@gmail.com",
+      "password":"Vinothvinoth",
+      "employeeRole":"UI/UX Designer",
+
+      "role":"user",
+      "joined":"2017",
+      "projects":"3",
+      "ratings":"9.1"
+
     }
+
   ]
 }

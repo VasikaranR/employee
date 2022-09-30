@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SampleComponent } from 'project_code/app1/src/app/sample/sample.component';
 import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
@@ -8,10 +9,14 @@ const routes: Routes = [
   import('./sample1/sample1.module').then(m => m.Sample1Module) 
   },
   {
-    path:'profile',
-    component:ProfileComponent
-  }
-  
+    path:'user',
+    component:SampleComponent
+  },
+ 
+  { path: 'profile',
+     loadChildren: () => 
+  import('./profile/profile.module').then(m => m.ProfileModule) 
+  },
 
 
 ];

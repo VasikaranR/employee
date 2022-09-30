@@ -7,7 +7,6 @@ import { HttpBackend, HttpClientModule } from '@angular/common/http';
 import { Sample1RoutingModule } from './sample1-routing.module';
 import { Sample1Component } from './sample1.component';
 import { LoginComponent } from '../login/login.component';
-import { ProfileComponent } from '../profile/profile.component';
 
 
 
@@ -15,7 +14,7 @@ import { ProfileComponent } from '../profile/profile.component';
   declarations: [
     Sample1Component,
     LoginComponent,
-    ProfileComponent
+    
   ],
   imports: [
     CommonModule,

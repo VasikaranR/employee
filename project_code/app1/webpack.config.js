@@ -38,6 +38,8 @@ module.exports = {
         filename: "remoteEntry.js",
         exposes: {
          './Module': './project_code/app1/src/app/sample/sample.module.ts',
+         '.ProjectsModule':'./project_code/app1/src/app/projects/projects.module.ts',
+         '.AllUsersModule':'./project_code/app1/src/app/all-users/all-users.module.ts'
           } ,      
         
         // For hosts (please adjust)

@@ -70,7 +70,25 @@
       "budget": 34526700000,
       "assigned":"Kabalikhan"
 
+    },
+    {
+      "project_id": 10,
+      "project_name": "Freazeses",
+      "domain": "UI/UX",
+      "budget": 26700000,
+      "assigned":"Vinoth"
+
+    },
+    {
+      "project_id": 11,
+      "project_name": "Hillfiger",
+      "domain": "UI/UX",
+      "budget": 34526700000,
+      "assigned":"Vinoth"
+
     }
+    
+
     
    
   ]
