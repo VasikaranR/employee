@@ -17,13 +17,16 @@
         </li>
       </div>
         <li *ngIf="name" class="nav-item nav-item m-4">
-          <a  class="nav-link" [routerLink]="['/profile']" href="#">{{name}}</a>
+          <a  class="nav-link" [routerLink]="['/profile']" href="#"> My Profile</a>
         </li>
         <li *ngIf="!name" class="nav-item nav-item m-4">
-          <a  class="nav-link" [routerLink]="['/sample1']" href="#">login</a>
+          <a  class="nav-link" [routerLink]="['/sample1']"  href="#">login</a>
         </li>
         <li class="logout" class *ngIf="name" class="nav-item nav-item m-4 p-10">
           <a  class="nav-link"  href="#" (click)="logout()">logout</a>
+        </li>
+        <li *ngIf="name" class="nav-item nav-item m-4">
+          <a  class="nav-link" >Hi  {{name}} !</a>
         </li>
         <li class="nav-item dropdown">
         </ul>

@@ -7,6 +7,8 @@ import { HttpBackend, HttpClientModule } from '@angular/common/http';
 import { Sample1RoutingModule } from './sample1-routing.module';
 import { Sample1Component } from './sample1.component';
 import { LoginComponent } from '../login/login.component';
+import { NgToastModule } from 'ng-angular-popup'
+
 
 
 
@@ -20,7 +22,9 @@ import { LoginComponent } from '../login/login.component';
     CommonModule,
     Sample1RoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgToastModule
+
   ]
 })
 export class Sample1Module { }

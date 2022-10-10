@@ -6,17 +6,23 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import {NgToastModule} from'ng-angular-popup'
+import { HomepageComponent } from './homepage/homepage.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     FooterComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgToastModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

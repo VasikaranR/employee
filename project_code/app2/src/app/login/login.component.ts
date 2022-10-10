@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import {NgToastService} from'ng-angular-popup'
 
 
 @Component({
@@ -25,7 +26,7 @@ export class LoginComponent implements OnInit {
   }
   loginForm!: FormGroup | any;
 
-  constructor(private formbuilder: FormBuilder , private http:HttpClient , private router:Router) { 
+  constructor(private formbuilder: FormBuilder , private http:HttpClient , private router:Router, private toast:NgToastService) { 
 
   this.loginForm = this.formbuilder.group({
     email: new FormControl('', [Validators.required, Validators.pattern('^[a-z0-9\.]{4,18}@[a-z]+\.[a-z\.]{2,6}$')]),
@@ -65,7 +66,7 @@ login(){
 
     if(this.EmailVer==emailVal){
       if(this.passwordVer==val){
-       alert("logged successfully")
+       this.toast.success({detail:'Success',summary:"login successful",duration:5000,position:'tr'})
        localStorage.setItem("email",emailVal)
        localStorage.setItem("role",this.roleList)
        localStorage.setItem("name",this.userNameList)
@@ -83,11 +84,18 @@ login(){
    
     
   })
-  
  
- }
+ 
+}
 
 
 
 
 }
+
+
+ 
+
+
+
+

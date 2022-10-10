@@ -3,17 +3,18 @@
   <p></p>
 </div>
 <div class="container boder bg-secondary text-white w-50 p-5">
+<div class="container">
 
 	<form [formGroup]="loginForm"  novalidate>
 		<div class="form-group">
 			<label for="exampleInputEmail1">Email address</label>   
       <input type="email" class="form-control" formControlName="email" placeholder="Enter email">
-      <small class="form-text text-muted" 
+      <small class="form-text text-danger " 
         *ngIf="loginForm.controls.email.touched && loginForm.controls.email.errors?.required">
           Please enter email address.!
       </small>
 
-      <small class="form-text text-muted"
+      <small class="form-text text-danger"
       *ngIf="loginForm.controls.email.touched && loginForm.controls.email.errors?.email">
         Email address not well formed.!
       </small>
@@ -23,7 +24,7 @@
       <label for="exampleInputPassword1">Password</label>
       <input type="password" class="form-control" formControlName="password" placeholder="Password">
  
-      <small class="form-text text-muted" 
+      <small class="form-text text-danger" 
       *ngIf="loginForm.controls.password.touched && loginForm.controls.password.errors?.required">
         Please enter valid password !
     </small>
@@ -32,6 +33,8 @@
     <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid" (click)="login()" >Login</button>
   </form>
 </div>
+</div>
+
 <div class="container w-100 p-5">
   <p></p>
   <p></p>

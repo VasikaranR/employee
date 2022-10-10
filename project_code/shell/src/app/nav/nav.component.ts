@@ -34,4 +34,10 @@ export class NavComponent implements OnInit {
       window.location.reload();
     })
   }
+  displayStyle="none";
+
+openPopup(){
+  this.displayStyle = "block";
+}
+
 }

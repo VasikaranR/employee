@@ -1,8 +1,7 @@
 import { loadRemoteModule } from '@angular-architects/module-federation';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ProfileComponent } from 'project_code/app2/src/app/profile/profile.component';
-
+import { AuthGuardService as AuthGuard } from 'project_code/authservice/auth-guard.service';
 const routes: Routes = [
  
   {
@@ -13,6 +12,7 @@ const routes: Routes = [
     remoteEntry: 'http://localhost:8001/remoteEntry.js',
     exposedModule: './Module',
     }).then((m) => m.SampleModule),
+    canActivate:[AuthGuard]
     },
     {
       path: 'sample1',
@@ -22,6 +22,7 @@ const routes: Routes = [
       remoteEntry: 'http://localhost:8002/remoteEntry.js',
       exposedModule: './Module',
       }).then((m) => m.Sample1Module),
+
       },
       {
         path: 'projects',
@@ -31,6 +32,8 @@ const routes: Routes = [
         remoteEntry: 'http://localhost:8001/remoteEntry.js',
         exposedModule: '.ProjectsModule',
         }).then((m) => m.ProjectsModule),
+        canActivate:[AuthGuard]
+
   
       },
       {
@@ -40,7 +43,9 @@ const routes: Routes = [
         type: 'module',
         remoteEntry:'http://localhost:8001/remoteEntry.js',
         exposedModule:'.AllUsersModule'
-        }).then((m) =>m.AllUsersModule)
+        }).then((m) =>m.AllUsersModule),
+        canActivate:[AuthGuard]
+
       },
 
       {
@@ -51,7 +56,11 @@ const routes: Routes = [
         remoteEntry: 'http://localhost:8002/remoteEntry.js',
         exposedModule: '.ProfileModule',
         }).then((m) => m.ProfileModule),
+        canActivate:[AuthGuard]
+
         }
+
+      
 ];
 
 @NgModule({
