@@ -5,14 +5,16 @@
       "project_name": "SMART HOUSE",
       "domain": "IOT",
       "budget": 3000000,
-      "assigned":"Vasikaran"
+      "assigned":"Vasikaran",
+      "description":" Smart home is the one of the projects of LG technologies ,It is one of the most formidable brands in consumer electronics, home appliances, IT hardware and mobile communications space.now by SMART House LG is expecting a fully fledged IOT application "
     },
     {
       "project_id": 2,
       "project_name": "TECLATON",
       "domain": "AI and ML",
       "budget": 47400000,
-      "assigned":"Vasikaran"
+      "assigned":"Vasikaran",
+      "description":" Smart home is the one of the projects of LG technologies ,It is one of the most formidable brands in consumer electronics, home appliances, IT hardware and mobile communications space.now by SMART House LG is expecting a fully fledged IOT application "
 
     },
     {
@@ -20,7 +22,8 @@
       "project_name": "LATON",
       "domain": "TESTING",
       "budget": 34500000,
-      "assigned":"KavyaMohan"
+      "assigned":"KavyaMohan",
+      "description":" Smart home is the one of the projects of LG technologies ,It is one of the most formidable brands in consumer electronics, home appliances, IT hardware and mobile communications space.now by SMART House LG is expecting a fully fledged IOT application "
 
     },
     {
@@ -28,7 +31,9 @@
       "project_name": "STOCIC",
       "domain": "WEB DEVELOPMENT",
       "budget": 468000000,
-      "assigned":"Kabalikhan"
+      "assigned":"Kabalikhan",
+      "description":" Smart home is the one of the projects of LG technologies ,It is one of the most formidable brands in consumer electronics, home appliances, IT hardware and mobile communications space.now by SMART House LG is expecting a fully fledged IOT application "
+
 
     },
     {
@@ -36,7 +41,9 @@
       "project_name": "MIRANDA",
       "domain": "CLOUD INTERGRATION",
       "budget": 26789000,
-      "assigned":"KavyaMohan"
+      "assigned":"KavyaMohan",
+      "description":" Smart home is the one of the projects of LG technologies ,It is one of the most formidable brands in consumer electronics, home appliances, IT hardware and mobile communications space.now by SMART House LG is expecting a fully fledged IOT application "
+
 
     },
     {
@@ -44,7 +51,9 @@
       "project_name": "MITCHUBISHI",
       "domain": "IOT",
       "budget": 89000000,
-      "assigned":"Kabalikhan"
+      "assigned":"Kabalikhan",
+      "description":" Smart home is the one of the projects of LG technologies ,It is one of the most formidable brands in consumer electronics, home appliances, IT hardware and mobile communications space.now by SMART House LG is expecting a fully fledged IOT application "
+
 
     },
     {
@@ -52,7 +61,9 @@
       "project_name": "MEGATRON",
       "domain": "MIGRATION",
       "budget": 57680000,
-      "assigned":"Vasikaran"
+      "assigned":"Vasikaran",
+      "description":" Smart home is the one of the projects of LG technologies ,It is one of the most formidable brands in consumer electronics, home appliances, IT hardware and mobile communications space.now by SMART House LG is expecting a fully fledged IOT application "
+
 
     },
     {
@@ -60,7 +71,9 @@
       "project_name": "MAJESTIC",
       "domain": "DATA SCIENCE",
       "budget": 1245300000,
-      "assigned":"Kabalikhan"
+      "assigned":"Kabalikhan",
+      "description":" Smart home is the one of the projects of LG technologies ,It is one of the most formidable brands in consumer electronics, home appliances, IT hardware and mobile communications space.now by SMART House LG is expecting a fully fledged IOT application "
+
 
     },
     {
@@ -68,7 +81,9 @@
       "project_name": "BEARSTONE",
       "domain": "ML",
       "budget": 34526700000,
-      "assigned":"Kabalikhan"
+      "assigned":"Kabalikhan",
+      "description":" Smart home is the one of the projects of LG technologies ,It is one of the most formidable brands in consumer electronics, home appliances, IT hardware and mobile communications space.now by SMART House LG is expecting a fully fledged IOT application "
+
 
     },
     {
@@ -76,7 +91,9 @@
       "project_name": "Freazeses",
       "domain": "UI/UX",
       "budget": 26700000,
-      "assigned":"Vinoth"
+      "assigned":"Vinoth",
+      "description":" Smart home is the one of the projects of LG technologies ,It is one of the most formidable brands in consumer electronics, home appliances, IT hardware and mobile communications space.now by SMART House LG is expecting a fully fledged IOT application "
+
 
     },
     {
@@ -84,7 +101,9 @@
       "project_name": "Hillfiger",
       "domain": "UI/UX",
       "budget": 34526700000,
-      "assigned":"Vinoth"
+      "assigned":"Vinoth",
+      "description":" Smart home is the one of the projects of LG technologies ,It is one of the most formidable brands in consumer electronics, home appliances, IT hardware and mobile communications space.now by SMART House LG is expecting a fully fledged IOT application "
+
 
     }
     

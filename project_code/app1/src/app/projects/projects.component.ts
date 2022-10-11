@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
@@ -14,7 +15,7 @@ export class ProjectsComponent implements OnInit {
   budget:any
   project_id:any
 
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient,private router:Router) { }
     role=localStorage.getItem('role');
     ngOnInit(): void {
       this.http.get(`http://localhost:3000/data`).subscribe((data)=>{
@@ -23,5 +24,9 @@ export class ProjectsComponent implements OnInit {
 
     })
   }
-
+  backTo(){
+    console.log("heelo");
+    
+    this.router.navigate(['user']);
+  }
 }

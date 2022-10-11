@@ -1,5 +1,7 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpBackend, HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-all-users',
@@ -8,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AllUsersComponent implements OnInit {
   usersList:any=[]
-  constructor( private http:HttpClient) { }
+  constructor( private http:HttpClient,private router:Router) { }
   val:any
   ngOnInit(): void {
     this.http.get(`http://localhost:4000/userDetails?=userName`).subscribe((data)=>{
@@ -16,6 +18,10 @@ export class AllUsersComponent implements OnInit {
         this.usersList=data; 
 
   })
+ 
+}
 
+back(){
+  this.router.navigate(['user']);
 }
 }

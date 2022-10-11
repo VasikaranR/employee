@@ -5,8 +5,6 @@ import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SampleModule } from './sample/sample.module';
-import { ProjectsModule } from './projects/projects.module';
-import { AllUsersModule } from './all-users/all-users.module';
 
 @NgModule({
   declarations: [
@@ -17,8 +15,6 @@ import { AllUsersModule } from './all-users/all-users.module';
     AppRoutingModule,
     SampleModule,
     CommonModule,
-    ProjectsModule,
-    AllUsersModule
   ],
   providers: [],
   bootstrap: [AppComponent],

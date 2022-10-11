@@ -10,7 +10,6 @@ import { BrowserModule } from '@angular/platform-browser';
   declarations: [ProjectsComponent],
   imports: [
     CommonModule,
-    BrowserModule,
     ProjectsRoutingModule
   ]
 })

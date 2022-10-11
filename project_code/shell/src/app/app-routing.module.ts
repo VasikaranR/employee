@@ -58,8 +58,8 @@ const routes: Routes = [
         }).then((m) => m.ProfileModule),
         canActivate:[AuthGuard]
 
-        }
-
+        },
+      
       
 ];
 

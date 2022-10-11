@@ -22,13 +22,13 @@
         <li *ngIf="!name" class="nav-item nav-item m-4">
           <a  class="nav-link" [routerLink]="['/sample1']"  href="#">login</a>
         </li>
-        <li class="logout" class *ngIf="name" class="nav-item nav-item m-4 p-10">
-          <a  class="nav-link"  href="#" (click)="logout()">logout</a>
-        </li>
         <li *ngIf="name" class="nav-item nav-item m-4">
           <a  class="nav-link" >Hi  {{name}} !</a>
         </li>
         <li class="nav-item dropdown">
         </ul>
+
       </div>
+      <button class="btn btn-danger m-4" *ngIf="name"><a class="nav-link"  href="#" (click)="logout()">logout</a></button>
+
   </nav>
