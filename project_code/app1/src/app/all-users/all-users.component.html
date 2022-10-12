@@ -8,17 +8,50 @@
             <tr>
               
               <th scope="col">All Users</th>
+              <th></th>
             </tr>
         </thead>
         
         <tbody class="p-5 m-5 ">
             <tr *ngFor="let Projects of usersList">
               <td>{{Projects.userName}}</td>
-
+              <td><button class="btn btn-primary" (click)="viewProjects(content,Projects.userName)">View Projects</button></td>
            </tr>
         </tbody>
      
     </table>
+    <ng-template #content let-c="close" let-d="dismiss">
+      <div class="modal-header bg-color bg-warning ">
+        <h4 class="modal-title text-lg text-bold text-align text-align-center" id="modal-basic-title">Project Description!</h4>
+        <button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+        <hr>
+      </div>
+      <div class="modal-body">
+        <!-- <h4 class="bg bg-color  ">Project Name</h4> -->
+          <div *ngFor='let project of viewProjectsList ;index as i'>
+          <table>
+            <tr>
+              <th  scope="col">Project Id</th>
+              &nbsp;
+              <th  scope="col">Project Name</th>
+            </tr>
+            <tbody>
+            <tr>
+              <td>{{project.project_id}}</td>
+              &nbsp;&nbsp;&nbsp;
+              <td>{{project.project_name}}</td>
+          </tr>
+
+          </tbody>
+          </table>
+          <hr>
+         
+          </div>
+      </div>
+      <div class="modal-footer ">
+        <button type="button" class="btn btn-danger" (click)="c('Save click')">Close</button>
+      </div>
+    </ng-template>
     <button class="btn btn-primary m-4" (click)="back()">Back</button>
 
     <div class="container w-100 p-5">

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { Router } from '@angular/router';
 import { NgbModal, NgbModalConfig } from '@ng-bootstrap/ng-bootstrap';
+import { SampleService } from './sample.service';
 
 
 @Component({
@@ -23,18 +24,16 @@ export class SampleComponent implements OnInit {
   role:any=localStorage.getItem('role');
   content: any;
 
-  constructor(private http:HttpClient, private router:Router,config: NgbModalConfig, private modalService: NgbModal) { 
+  constructor(private http:HttpClient, private router:Router,config: NgbModalConfig, private modalService: NgbModal,private sampleService:SampleService) { 
     config.backdrop = 'static';
     config.keyboard = false;
   }
   
   open(content:any,id:any) {
     
-    this.http.get(`http://localhost:3000/data?project_id=${id}`).subscribe((data3)=>{
+    this.sampleService.description(id).subscribe((data3)=>{
       console.log("this is data 3",data3);
       this.descriptionList=data3;
-
-  
      })
      this.modalService.open(content);
   }
@@ -42,7 +41,7 @@ export class SampleComponent implements OnInit {
 
   ngOnInit(): void {
     console.log(this.userName)
-    this.http.get(`http://localhost:3000/data?assigned=${this.userName}`).subscribe((data)=>{
+    this.sampleService.userData(this.userName).subscribe((data)=>{
      console.log(data)
      console.log("from local",this.userName)
      this.userList=data ;
@@ -51,7 +50,7 @@ export class SampleComponent implements OnInit {
     })
 
 
-    this.http.get(`http://localhost:3000/data`).subscribe((data1)=>{
+    this.sampleService.adminData().subscribe((data1)=>{
       console.log(data1)
       this.adminList=data1;
       

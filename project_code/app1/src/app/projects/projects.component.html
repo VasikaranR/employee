@@ -10,6 +10,7 @@
               <th scope="col">Project  Name</th>
               <th scope="col">Domain</th>
               <th scope="col">Budget</th>
+              <th></th>
             </tr>
         </thead>
         
@@ -19,10 +20,45 @@
             <td>{{Projects.project_name}}</td>
             <td>{{Projects.domain}}</td>
             <td>{{Projects.budget}}</td>
+            <td><button class="btn btn-primary" (click)="details(content,Projects.project_id)">more</button></td>
            </tr>
         </tbody>
      
     </table>
+    <ng-template #content let-c="close" let-d="dismiss">
+      <div class="modal-header bg-color bg-warning ">
+        <h4 class="modal-title text-lg text-bold text-align text-align-center" id="modal-basic-title">Project Description!</h4>
+        <button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+        <hr>
+      </div>
+      <div class="modal-body">
+       
+          <div *ngFor='let projectData of projectDataList ;index as i'>
+          <hr>
+           <h4 class="bg bg-color  ">Project Name</h4>
+            <p>{{projectData.project_name}}</p> 
+          <hr>
+          <h4 class="bg bg-color ">Project Id</h4>
+            <p>{{projectData.project_id}}</p>
+          <hr>
+          <h4 class="bg bg-color ">Project Domain</h4>
+           <p>{{projectData.domain}}</p>
+           <hr>
+          <h4 class="bg bg-color ">Project Budget</h4>
+            <p>{{projectData.budget}}</p>
+            <hr>
+          <h4 class="bg bg-color ">Project Description</h4>
+            <p>{{projectData.description}}</p>
+          <hr>
+          <h4 class="bg bg-color ">Project Assigned To</h4>
+            <p>{{projectData.assigned}}</p>
+          <hr>
+          </div>
+      </div>
+      <div class="modal-footer ">
+        <button type="button" class="btn btn-danger" (click)="c('Save click')">Close</button>
+      </div>
+    </ng-template>
     <button class="btn btn-primary m-4" [routerLink]="['']" (click)="backTo()">Back<a  ></a></button>
 
     <div class="container w-100 p-5"> 
