@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { ProfileService } from './profile.service';
 
 @Component({
   selector: 'app-profile',
@@ -16,13 +17,13 @@ export class ProfileComponent implements OnInit {
   ratings:any
  
 
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient,private profileService:ProfileService) { }
   val:any =localStorage.getItem('name');
 
 
   ngOnInit(): void {
     
-    this.http.get(`http://localhost:4000/userDetails?userName=${this.val}`).subscribe((data)=>{
+   this.profileService.profileData(this.val).subscribe((data)=>{
     this.profileList=data
     this.employeeRole=this.profileList[0].employeeRole
     this.joined=this.profileList[0].joined

@@ -3,6 +3,7 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import {NgToastService} from'ng-angular-popup'
+import { LoginService } from '../sample1/login.service';
 
 
 @Component({
@@ -26,7 +27,7 @@ export class LoginComponent implements OnInit {
   }
   loginForm!: FormGroup | any;
 
-  constructor(private formbuilder: FormBuilder , private http:HttpClient , private router:Router, private toast:NgToastService) { 
+  constructor(private formbuilder: FormBuilder , private http:HttpClient , private router:Router, private toast:NgToastService, private loginDataService:LoginService) { 
 
   this.loginForm = this.formbuilder.group({
     email: new FormControl('', [Validators.required, Validators.pattern('^[a-z0-9\.]{4,18}@[a-z]+\.[a-z\.]{2,6}$')]),
@@ -47,7 +48,7 @@ login(){
 
   console.log("static data",this.loginForm.value)
   console.log("this is val",val)
-  this.http.get(`http://localhost:4000/userDetails?password=${val}`).subscribe((data)=>{
+  this.loginDataService.loginCallOne(val).subscribe((data)=>{
     console.log("this is data from data",data)
     this.passwordList=data;
     this.passwordVer=this.passwordList[0].password
@@ -56,7 +57,7 @@ login(){
   
   })
 
-  this.http.get(`http://localhost:4000/userDetails?userEmail=${emailVal}`).subscribe(async(data1)=>{
+  this.loginDataService.loginCallTwo(emailVal).subscribe(async(data1)=>{
     console.log("this is data from data1",data1)
 
   
